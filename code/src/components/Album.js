@@ -11,8 +11,8 @@ export const Album = (props) => (
     <div><img src={props.item.images[0].url} alt="" />
     </div>
     <div className="info">
-      <div className="hoverInfo"><img src={logo} alt="" /></div>
-      <div className="hoverInfo2"><img src={logo2} alt="" /></div>
+    <div className="hoverInfo"><a href={props.item.external_urls.spotify}><img src={logo} alt="" /></a></div>
+     <div className="hoverInfo2"><img src={logo2} alt="" /></div>
       <div className="hoverInfo3"><img src={logo3} alt="" /></div>
     </div>
   </div>
