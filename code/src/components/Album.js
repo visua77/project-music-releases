@@ -7,7 +7,7 @@ import logo3 from 'icons/dots.svg'
 export const Album = (props) => (
   <div className="album">
     <h1><a href={props.item.external_urls.spotify}>{props.name}</a></h1>
-    <h3><a href={props.item.artists[0].external_urls.spotify}>{props.item.artists[0].name}</a></h3>
+    <h3>{props.item.artists[0].name}</h3>
     <div><img src={props.item.images[0].url} alt="" />
     </div>
     <div className="info">
