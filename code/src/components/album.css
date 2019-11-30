@@ -2,8 +2,15 @@
         box-sizing: border-box;
     }
     
-    a {
-        z-index: 100;
+    .info {
+        display: none;
+        position: relative;
+        z-index: 1000;
+    }
+    
+    .theText {
+        position: relative;
+        z-index: 10000;
     }
     
     .album {
@@ -15,11 +22,7 @@
         width: 33%;
         padding: 25px;
         border: 2px solid white;
-    }
-    
-    .info {
-        display: none;
-        position: relative;
+        z-index: 100;
     }
     
     .hoverInfo {
@@ -75,7 +78,7 @@
         left: 0;
         bottom: 0;
         background-color: rgba(0, 0, 0, 0.6);
-        z-index: 10;
+        z-index: 100;
     }
     
     @media (max-width: 768px) {
